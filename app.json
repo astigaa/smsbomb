@@ -1,0 +1,26 @@
+{
+    "name": "Enough",
+    "description": "SMS Bomber",
+    "repository": "https://github.com/tingirifistik/Enough",
+    "env": {
+        "TOKEN": {
+            "description": "Telegram botunun Token'ı",
+            "required": true
+        },
+        "SAHIP": {
+            "description": "Telefon Numaranız(Size SMS gelmemesi için)",
+            "required": false
+        }
+    },
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
